@@ -45,7 +45,7 @@ nav ul li a:hover{
     display: none;
 }
 
-/* Responsive word start */
+/* Nav Responsive word start */
 
 @media only screen and (max-width: 940px) {
     nav ul{
@@ -85,4 +85,56 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+/* first section code of main tag start */
+.first-section{
+    background-color: #559fc2;
+}
+.service-preant{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1200px;
+    margin: auto;
+    grid-gap: 10px;
+}
+.single-service{
+    background-color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border: 3px solid green;
+    box-shadow: 5px 5px 10px gray;
+}
+.single-service i{
+    font-size: 40px;
+}
+.single-service h2{
+    margin: 10px 0px;
+    font-weight: bold;
+}
+.first-section h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 0px;
+    letter-spacing: 0.2em;
+}
+
+/* first section of main tag media query code start */
+@media only screen and (max-width: 688px){
+    .service-preant{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 1199px) {
+    .service-preant{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+    }
 }
