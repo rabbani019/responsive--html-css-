@@ -3,3 +3,86 @@
     padding: 0px;
     box-sizing: border-box;
 }
+nav{
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 80px;
+}
+nav .logo{
+    color: white;
+    font-size: 40px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+nav ul li:first-child a{
+    background-color: #b13ee6ab;
+}
+nav ul li a:hover{
+    background-color: #b13ee696;
+}
+#click{
+    display: none;
+}
+.menu-button{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive word start */
+
+@media only screen and (max-width: 940px) {
+    nav ul{
+        position: fixed;
+        background-color: #0de266;
+        top: 80px;
+        height: 100vh;
+        left: -100%;
+        width: 100%;
+        padding-top: 20px;
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s ease ;
+    }
+    nav ul li{
+        margin: 20px 0px;
+    }
+    nav ul li a:hover{
+        background: none;
+        color: rgb(3, 1, 1);
+    }
+    nav ul li a:first-child{
+        background: none;
+    }
+   .menu-button{
+    display: block;
+   }
+   #click:checked ~ ul{left: 0%;}
+   #click:checked ~ .menu-button i::before{
+    content: "\f00d";
+   }
+}
+/* header section code start */
+header{
+    background-image: url("images/images.jpg");
+    height: 93vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
