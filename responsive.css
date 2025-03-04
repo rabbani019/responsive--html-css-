@@ -80,7 +80,7 @@ nav ul li a:hover{
 }
 /* header section code start */
 header{
-    background-image: url("images/images.jpg");
+    background-image: url("images/banner.jpg");
     height: 93vh;
     background-size: cover;
     background-repeat: no-repeat;
