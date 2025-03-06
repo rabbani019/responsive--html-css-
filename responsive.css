@@ -1,140 +1,110 @@
-*{
+ *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+ }
+ /* Third section start here */
+.forth-section{
+    background-color: #154360;
+    padding: 50px;
 }
-nav{
-    background-color: dodgerblue;
+ .Advice-container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 20px;
-    height: 80px;
-}
-nav .logo{
+    margin: 50px 150px;
+    gap: 50px;
     color: white;
-    font-size: 40px;
 }
-nav ul{
-    display: flex;
-    list-style: none;
+.Advice-container .left img{
+    width: 100%;
 }
-nav ul li a{
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    margin: 0px 5px;
+.left h2{
+    padding: 20px 0px;
+    font-size: 30px;
+}
+.left p{
+    line-height: 1.3;
+    font-size: 18px;
+}
+.left .icon a i{
+    padding: 5px 20px;
+    font-size: 30px;
+    background-color: #fff; 
+    border-radius: 30px;
+    margin: 20px 5px;
     transition: 0.5s;
-    text-transform: uppercase;
 }
-nav ul li:first-child a{
-    background-color: #b13ee6ab;
+.left .icon a i:hover{
+    background-color: #f8b2f5;
 }
-nav ul li a:hover{
-    background-color: #b13ee696;
+.left .icon{
+    text-align: center;
+
 }
-#click{
-    display: none;
+.right h2{
+    border-bottom: 2px solid red;
+    font-size: 30px;
+    padding-bottom: 20px;
 }
-.menu-button{
-    color: white;
-    font-size: 25px;
-    cursor: pointer;
-    display: none;
+.right p{
+    line-height: 1.3;
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: justify;
+}
+.right button{
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.right button:hover{
+    background-color: ;
 }
 
-/* Nav Responsive word start */
 
-@media only screen and (max-width: 940px) {
-    nav ul{
-        position: fixed;
-        background-color: #0de266;
-        top: 80px;
-        height: 100vh;
-        left: -100%;
-        width: 100%;
+
+
+
+/* Responsive area start */
+@media only screen and (max-width: 688px) {
+    .Advice-container{
+        display: block;
+        margin: 30px 0px;
+        gap: 30px;
+        color: white;
+    }
+    .right h2{
+        border-bottom: 2px solid red;
+        font-size: 30px;
+        padding-bottom: 20px;
         padding-top: 20px;
-        flex-direction: column;
-        text-align: center;
-        transition: all 0.5s ease ;
     }
-    nav ul li{
-        margin: 20px 0px;
+    .left .icon{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 200px;
+        margin: auto;
     }
-    nav ul li a:hover{
-        background: none;
-        color: rgb(3, 1, 1);
-    }
-    nav ul li a:first-child{
-        background: none;
-    }
-   .menu-button{
-    display: block;
-   }
-   #click:checked ~ ul{left: 0%;}
-   #click:checked ~ .menu-button i::before{
-    content: "\f00d";
-   }
-}
-/* header section code start */
-header{
-    background-image: url("images/banner.jpg");
-    height: 93vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/* first section code of main tag start */
-.first-section{
-    background-color: #559fc2;
-}
-.service-preant{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 1200px;
-    margin: auto;
-    grid-gap: 10px;
-}
-.single-service{
-    background-color: white;
-    text-align: center;
-    padding: 30px 20px;
-    border-radius: 5px;
-    border: 3px solid green;
-    box-shadow: 5px 5px 10px gray;
-}
-.single-service i{
-    font-size: 40px;
-}
-.single-service h2{
-    margin: 10px 0px;
-    font-weight: bold;
-}
-.first-section h1{
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    padding: 30px 0px;
-    letter-spacing: 0.2em;
+
 }
 
-/* first section of main tag media query code start */
-@media only screen and (max-width: 688px){
-    .service-preant{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 10px;
-        width: 100%;
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    .Advice-container{
+        display: block;
+        margin: 50px 30px;
+        gap: 30px;
+        color: white;
     }
-}
-
-@media only screen and (min-width: 689px) and (max-width: 1199px) {
-    .service-preant{
+    .right h2{
+        border-bottom: 2px solid red;
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .left .icon{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        width: 200px;
+        margin: auto;
     }
 }
