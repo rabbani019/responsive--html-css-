@@ -148,7 +148,18 @@ fieldset legend i{
 .fieldset{
     border: 3px solid white;
 }
-
+/* section last start here */
+#discuss-parent{
+    display: flex;
+   
+   
+}
+.discuss-img img{
+    width: 100%;
+}
+.discuss-text{
+    width: 100%;
+}
 
 
 
